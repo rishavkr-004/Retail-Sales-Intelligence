@@ -1,0 +1,52 @@
+
+.app-layout {
+  min-height: 100vh;
+  background: #f7f9fc;
+}
+
+.main-content {
+  min-height: 100vh;
+  margin-left: 255px;
+}
+
+.page-content {
+  padding: 28px 30px;
+}
+
+.coming-soon {
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.coming-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #edf3ff;
+  color: #2563eb;
+}
+
+.coming-soon h2 {
+  color: #172554;
+}
+
+.coming-soon p {
+  color: #8491a5;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .page-content {
+    padding: 20px 15px;
+  }
+}

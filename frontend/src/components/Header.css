@@ -1,0 +1,104 @@
+
+.app-header {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-left h1 {
+  margin: 0;
+  color: #172554;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.header-left p {
+  margin: 5px 0 0;
+  color: #8491a5;
+  font-size: 12px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 13px;
+  color: #94a3b8;
+  background: #f8fafc;
+  border: 1px solid #e8edf5;
+  border-radius: 9px;
+}
+
+.header-search input {
+  width: 145px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #334155;
+  font-size: 12px;
+}
+
+.notification-button,
+.menu-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.notification-button span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 14px 16px;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .header-left h1 {
+    font-size: 17px;
+  }
+
+  .header-left p {
+    display: none;
+  }
+
+  .header-search {
+    display: none;
+  }
+}
